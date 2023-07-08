@@ -1,18 +1,9 @@
 ﻿//Задача 54: Задайте двумерный массив. Напишите программу, которая упорядочит по убыванию элементы каждой строки двумерного массива.
-
 Console.Clear();
 Console.WriteLine($"\n Введите размер массива m x n и диапазон случайных значений:");
 int m = InputNumbers("Введите m: ");
 int n = InputNumbers("Введите n: ");
 int range = InputNumbers("Введите диапазон: от 1 до ");
-
-int[,] array = new int[m, n];
-CreateArray(array);
-WriteArray(array);
-
-Console.WriteLine($"\n Отсортированный массив: ");
-OrderArrayLines(array);
-WriteArray(array);
 
 void OrderArrayLines(int[,] array)
 {
@@ -62,3 +53,13 @@ void WriteArray(int[,] array)
     Console.WriteLine();
   }
 }
+
+
+
+int[,] array = new int[m, n];
+CreateArray(array);
+WriteArray(array);
+
+Console.WriteLine($"\n Отсортированный массив: ");
+OrderArrayLines(array);
+WriteArray(array);
